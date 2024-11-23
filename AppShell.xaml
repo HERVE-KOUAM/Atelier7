@@ -4,12 +4,37 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Atelier7"
-    Shell.FlyoutBehavior="Disabled"
+    Shell.FlyoutBehavior="Flyout"
     Title="Atelier7">
 
+
+    <Shell.FlyoutHeader>
+        <Grid>
+            <Image Source="cold.png"
+                   HeightRequest="200"
+                   
+                   />
+        </Grid>
+    </Shell.FlyoutHeader>
+
+
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        
+        
     <ShellContent
         Title="Convertisseur"
         ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Route="MainPage" 
+        Icon="convertshapes.png"/>
+    
+    <ShellContent
+     Title="About"
+     ContentTemplate="{DataTemplate local:About}"
+     Route="About"
+     Icon="info.png"/>
+
+    </FlyoutItem>
+
 
 </Shell>
