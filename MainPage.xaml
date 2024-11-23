@@ -7,11 +7,12 @@
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
+            
             <Image
                 Source="dotnet_bot.png"
                 HeightRequest="185"
                 Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a race car number eight" />
+                SemanticProperties.Description="icone de conversion" />
 
             <Label
                 Text="Bienvenue au easyConvertor"
@@ -21,10 +22,70 @@
             <Label
                 Text="Conversion en degres celsus et ferenait"
                
-                SemanticProperties.Description="" />
+               HorizontalOptions="Center" />
 
-            
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Entry x:Name="CelsusE"
+         Placeholder="taper 'C"
+         Grid.Row="0"
+         Grid.Column="0"/>
+                
+                <ImageButton 
+                Source="rightarrow.png"
+                HeightRequest="20"
+                WidthRequest="20"
+                Margin="10,0"
+                Grid.Row="0"
+                Grid.Column="1" />
+                
+                <Label 
+            VerticalTextAlignment="Center"
+            Text="'F"
+            Grid.Row="0"
+            Grid.Column="2"/>
+
+                <Entry x:Name="FaraE"
+            Placeholder="taper 'F"
+            Grid.Row="1"
+            Grid.Column="0"/>
+
+                <ImageButton Source="rightarrow.png"
+            HeightRequest="20"
+            WidthRequest="20"
+            Margin="10,0"
+            Grid.Row="1"
+            Grid.Column="1"
+         
+              />
+
+                <Label  
+            VerticalTextAlignment="Center"
+            Text="'C"
+            Grid.Row="1"
+            Grid.Column="2"/>
+
+            </Grid>
+               
+               
+
+
+                
+
+
         </VerticalStackLayout>
+            
     </ScrollView>
 
 </ContentPage>
