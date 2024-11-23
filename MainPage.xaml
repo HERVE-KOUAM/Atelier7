@@ -40,7 +40,9 @@
                 <Entry x:Name="CelsusE"
          Placeholder="taper 'C"
          Grid.Row="0"
-         Grid.Column="0"/>
+         Grid.Column="0"
+         ClearButtonVisibility="WhileEditing" 
+         />
                 
                 <ImageButton 
                 Source="rightarrow.png"
@@ -48,18 +50,21 @@
                 WidthRequest="20"
                 Margin="10,0"
                 Grid.Row="0"
-                Grid.Column="1" />
-                
-                <Label 
+                Grid.Column="1"
+                Clicked="Celclic"/>
+
+                <Label  x:Name="FT"
             VerticalTextAlignment="Center"
             Text="'F"
             Grid.Row="0"
             Grid.Column="2"/>
 
                 <Entry x:Name="FaraE"
-            Placeholder="taper 'F"
-            Grid.Row="1"
-            Grid.Column="0"/>
+                        Placeholder="taper 'F"
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        ClearButtonVisibility="WhileEditing" 
+                         />
 
                 <ImageButton Source="rightarrow.png"
             HeightRequest="20"
@@ -67,14 +72,15 @@
             Margin="10,0"
             Grid.Row="1"
             Grid.Column="1"
+            Clicked="Fclic"                 
          
               />
 
-                <Label  
-            VerticalTextAlignment="Center"
-            Text="'C"
-            Grid.Row="1"
-            Grid.Column="2"/>
+                <Label   x:Name="CT"
+                        VerticalTextAlignment="Center"
+                        Text="'C"
+                         Grid.Row="1"
+                        Grid.Column="2"/>
 
             </Grid>
                
